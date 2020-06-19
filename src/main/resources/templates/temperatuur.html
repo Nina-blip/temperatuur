@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperatuur Turnhout</title>
+</head>
+<body>
+<h1>Bekijk de temperatuur van Turnhout:</h1>
+<h2 th:if="${tempGemeente} == null">We vinden de temperatuur van Turnhout momenteel niet.</h2>
+<h2 th:if="${tempGemeente} != null"> De temperatuur in Turnhout is momenteel <span th:text="${tempGemeente}"></span> °C.</h2>
+</body>
+</html>
